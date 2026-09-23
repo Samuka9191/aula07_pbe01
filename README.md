@@ -34,10 +34,10 @@ Para criar este projeto do zero através do prompt de comando (**CMD**), foram e
    *(Baixa e instala o Express, gerando a pasta node_modules).*
 
 3. **Configuração do Script de Inicialização:**
-   Dentro do arquivo `package.json`, foi adicionado o script `"dev"` para facilitar a execução com o recurso de atualização automática (`--watch`) nativo do Node.js:
+   Dentro do arquivo `package.json`, foi adicionado o script `"dev"` para facilitar a execução com o recurso de atualização automática (`servidor/server.js`) nativo do Node.js:
    ```json
    "scripts": {
-     "dev": "node --watch server.js"
+     "dev": "node servidor/server.js"
    }
    ```
 
