@@ -7,20 +7,13 @@ const mostrarInventario = (req, res) => {
 
  const novoInventario = (req, res) => {
     if (req.body) {
-
-        const novoId = inventario.length > 0
-            ? Math.max(...inventario.map(item => item.id)) + 1
-            : 1;
-
-        const novoItem = {
-            id: novoId,
-            ...req.body
-        };
-
-     inventario.push(novoItem);
-
         res.send("Novo Inventario recebido!")
         inventario.push(req.body)
+        if(req.body){
+            const novoId = inventario.length + 1;
+        req.body.id = novoId;
+        inventario.push(req.body);
+        }
     } else {
         res.send("Erro ao receber pedido no estoque!")
     }
