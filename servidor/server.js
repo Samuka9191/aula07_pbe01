@@ -5,8 +5,20 @@ const mostrarInventario = (req, res) => {
     res.send(inventario)
 }
 
-const novoInventario = (req, res) => {
+ const novoInventario = (req, res) => {
     if (req.body) {
+
+        const novoId = inventario.length > 0
+            ? Math.max(...inventario.map(item => item.id)) + 1
+            : 1;
+
+        const novoItem = {
+            id: novoId,
+            ...req.body
+        };
+
+     inventario.push(novoItem);
+
         res.send("Novo Inventario recebido!")
         inventario.push(req.body)
     } else {
