@@ -55,7 +55,7 @@ O terminal exibirá a mensagem indicando que o servidor está ativo. Ele estará
 
 ---
 
-## 🛣️ Rotas da API Disponíveis
+##  Rotas da API Disponíveis
 
 ### 1. Criar um item (`POST /inventario`)
 Envia um novo item para ser adicionado ao inventário. O `id` é gerado automaticamente.
@@ -84,6 +84,6 @@ Remove permanentemente o item correspondente ao ID informado do arquivo `dados.j
 
 ---
 
-## 🔬 Testes e Validações Realizadas
+## Testes e Validações Realizadas
 *   **Persistência local:** Todas as inclusões, alterações e exclusões modificam diretamente o arquivo `dados.json` em tempo real.
 *   **Tratamento de erros:** Caso tente buscar, atualizar ou deletar um ID que não exista, a API responde corretamente informando que o registro não foi encontrado.
