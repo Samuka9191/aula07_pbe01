@@ -72,6 +72,7 @@ Envia um novo item para ser adicionado ao inventário. O `id` é gerado automati
 
 ### 2. Listar todos os itens (`GET /inventario`)
 Retorna um array com todos os itens salvos dentro do arquivo `dados.json`.
+![print 1](get1.png)
 
 ### 3. Consultar um item específico (`GET /inventario/:id`)
 Busca as informações detalhadas de um item pelo seu número de ID. Retorna erro `404` caso o ID não exista.
