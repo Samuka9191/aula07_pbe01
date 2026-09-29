@@ -71,18 +71,18 @@ Envia um novo item para ser adicionado ao inventário. O `id` é gerado automati
     ```
     ![print 2](post2.png)
 
-### 2. Listar todos os itens (`GET /inventario`)
+### 2. Listar todos os itens (`GET`)
 Retorna um array com todos os itens salvos dentro do arquivo `dados.json`.
 ![print 1](get1.png)
 
-### 3. Consultar um item específico (`GET /inventario/:id`)
+### 3. Consultar um item específico (`GET`)
 Busca as informações detalhadas de um item pelo seu número de ID. Retorna erro `404` caso o ID não exista.
 
-### 4. Atualizar um item (`PUT /inventario/:id`)
+### 4. Atualizar um item (`PUT`)
 Altera os dados de um item existente mantendo o mesmo ID original. É necessário enviar todas as propriedades atualizadas no corpo da requisição.
 ![print 3](put3.png)
 
-### 5. Excluir um item (`DELETE /inventario/:id`)
+### 5. Excluir um item (`DELETE`)
 Remove permanentemente o item correspondente ao ID informado do arquivo `dados.json`. Retorna o status de sucesso `204 (No Content)`.
 ![print 4](del4.png)
 
